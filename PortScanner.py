@@ -22,10 +22,10 @@ print("Açık taraması için 3")
 s = input("Seçenek : ")
 if s == "1":
     i = input("Hedef ip adresini girin : ")
-    os.system("nmap --open "+i)
+    os.system("nmap -Pn --open "+i)
 if s == "2":
     b = input("Hedef ip adresini girin : ")
-    os.system("nmap -sV "+b)
+    os.system("nmap -Pn -sV "+b)
 if s == "3":
     d = input("Hedef ip adresini girin : ")
-    os.system("nmap -sC "+d)
+    os.system("nmap -Pn -sC "+d)
